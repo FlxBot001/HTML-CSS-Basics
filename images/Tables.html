@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table with IDs</title>
+    <style>
+        /* Table styling */
+        table {
+            border-collapse: collapse; /* Collapse borders for horizontal borders only */
+            width: 80%; /* Set the width of the table to 80% of the container */
+            max-width: 800px; /* Optional: Set a maximum width */
+            border-bottom: 4px solid green; /* Green bottom border */
+            border-radius: 10px 10px 0 0; /* Apply radius only to top corners */
+            overflow: hidden; /* Keep the top corners rounded */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow around the table */
+            margin: 0 auto; /* Center the table horizontally */
+        }
+
+        h2 {
+            background-color: green;
+            border-radius: 3px;
+            border-bottom: 2px solid red;
+            font-family: "Fira Code SemiBold";
+            text-align: center;
+            font-size: 52px;
+        }
+
+        /* Header row */
+        #header-row th {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            text-align: center; /* Center the content in header cells */
+            border: none; /* Remove borders */
+        }
+
+        /* First row */
+        #first-row td {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            text-align: center; /* Center content in all data cells for first row */
+            border: none; /* Remove borders */
+        }
+
+        /* Second row */
+        #second-row td {
+            background-color: lightgray;
+            color: green;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center; /* Center content in all data cells for second row */
+            border: none; /* Remove borders */
+        }
+
+        /* Third row */
+        #third-row td {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            text-align: center; /* Center content in all data cells for third row */
+            border: none; /* Remove borders */
+        }
+
+        tr {
+            border-top: 1px solid grey; /* This will remain for horizontal separation */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table</h2>
+
+    <table>
+        <!-- Header row -->
+        <tr id="header-row">
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Team</th>
+        </tr>
+        <!-- First row -->
+        <tr id="first-row">
+            <td>1</td>
+            <td>Domenic</td>
+            <td>88,110</td>
+            <td>dcode</td>
+        </tr>
+        <!-- Second row -->
+        <tr id="second-row">
+            <td>2</td>
+            <td>Sally</td>
+            <td>72,400</td>
+            <td>Students</td>
+        </tr>
+        <!-- Third row -->
+        <tr id="third-row">
+            <td>3</td>
+            <td>Nick</td>
+            <td>52,300</td>
+            <td>dcode</td>
+        </tr>
+    </table>
+
+</body>
+</html>
